@@ -55,8 +55,11 @@ char* Math::Add(const char* a, const char* b)
 		return nullptr;
 	else
 	{
-		sum = (int)a + (int)b;
-		return (char*)sum;
+	size_t lenc = strlen(a) + strlen(b) + 1;
+	char* c = new char[lenc];
+	strcpy(c, a);
+	strcat(c, b);
+	return c;
 	}
 
 }
