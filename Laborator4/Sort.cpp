@@ -22,7 +22,7 @@ Sort::Sort(int n, int minim, int maxim)
 }
 
 Sort::Sort() {
-	vector<int> defaultVec = { 15, 54, 26, 23, 121, 45, 3 }; //<-intrebat despre implementare
+	vector<int> defaultVec = { 15, 54, 26, 23, 121, 45, 3 }; 
 	nrElemente = defaultVec.size();
 	list = new int[nrElemente];
 	for (int i = 0; i < nrElemente; i++)
