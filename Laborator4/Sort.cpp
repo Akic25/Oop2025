@@ -17,7 +17,7 @@ Sort::Sort(int n, int minim, int maxim)
 	int range = maxim - minim;
 	for (int i = 0; i < nrElemente; i++)
 	{
-		list[i] = minim + (rand() % range);
+		list[i] = minim + (std::rand() % (maxim - minim + 1));
 	}
 }
 
