@@ -77,7 +77,7 @@ Sort::Sort(const char s[100])
 //Functii-----------------------------
 
 
-void Sort::InsertSort(bool ascendent = false)
+void Sort::InsertSort(bool ascendent)
 {
 	int key;
 	for (int i = 1; i < nrElemente; ++i) 
@@ -123,7 +123,7 @@ int Sort::Partition(int low, int high, bool ascendent)
 	return i + 1;
 }
 
-void Sort::BubbleSort(bool ascendent = false)
+void Sort::BubbleSort(bool ascendent)
 {
 	bool swapped;
 
