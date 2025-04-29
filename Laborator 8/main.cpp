@@ -75,7 +75,7 @@ int main()
 	}
 
 	map<char, int>myMap;
-	//cout << "Sirul citit este : " << myString.c_str() << endl;
+	cout << "Sirul citit este : " << myString.c_str() << endl;
 
 	vector<string>splitWords = stringWords(myString);
 	map<string, int>frecv = wordFrequency(splitWords);
