@@ -13,7 +13,7 @@ vector<string> stringWords(const string& myString)
 	size_t start = 0;
 	size_t end;
 
-	while ((end = myString.find(' ', start)) != string::npos)
+	while ((end = myString.find_first_of(".' '", start)) != string::npos)
 	{
 		if (end > start)//daca avem spatii duble
 		{
