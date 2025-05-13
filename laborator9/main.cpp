@@ -110,10 +110,9 @@ public:
         int index;
 
     public:
-        Iterator(Entry* data, int index) : data(data), index(index) {}
-
-        std::tuple<K, V, int> operator*() const {
-            return std::make_tuple(data[index].key, data[index].value, index);
+          Iterator(Entry* data, int index) : data(data), index(index) {}
+        auto operator*()const {
+            return std::tuple<K, V, int>(data[index].key, data[index].value, index);
         }
 
 
